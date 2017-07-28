@@ -1,0 +1,125 @@
+useradd -d /opt/user-3 -s /bin/bash user-3
+
+
+to change shell 
+
+usermod -s /bin/sh user-3
+
+
+to delete user
+
+userdel username
+
+
+
+to list files as per the time stamp recorsuvely
+
+ls -ltr(latest files will show at botom)
+
+
+ls -lt (latest files will show at top)
+
+
+
+
+ps ( Process state) to check runing process in Linux
+
+ps -ef (efective filed0 ( PPID(Parent process ID)
+
+
+
+ps -ef | grep java 
+
+
+df (disk file system)
+
+
+du -sh directory name (to show the size of the directorys)
+ 
+grep "string" file name 
+
+
+grep -i "string" filename ( -i to ignore case sensitive)
+
+
+
+which 
+
+whereis java ( it will show the file location)
+
+
+to create a normal file into tar
+
+tar -cvf (name for the creating tar file.tar) filename(which you want to tar)
+
+tar -tvf
+
+to check each and every file
+
+tar -tvf filename.tar |more
+
+
+#######################################################
+
+VI editor
+******
+
+esc dd (to delete line in - vi editor)
+
+esc u (to get back the deleted line)
+
+esc ndd (n= lines from the cursor) (to delete n number of lines )
+
+esc yy (to copy line )
+
+esc p ( to paste)
+
+esc G (to move from head line to ground line)
+
+esc H  ( to move from ground to start line)
+
+esc $ (end of the line in present line
+
+
+esc x ( to delete a letter)
+
+esc dw (to delete entire word)
+
+esc yw (to copy word)
+
+esc O (to create a new line below the cursor present line)
+
+esc o (to create a new line above the cursor present line
+
+
+wc file name ( to check words in a file)
+
+
+wc -w (to display only words count )
+wc -l ( to display lines)
+wc -c ( to display characteristics)
+
+
+
+cut -c2 passwd (2 is the column in the file passwd)
+
+delemeter to display the perticular field
+
+cut -d ":" -f(filed) filename
+cut -d ":" -f1 passwd
+
+
+
+
+
+netstat (to check network statistics)
+
+
+
+
+crontab -e ( to edit crontab in unix)
+
+
+to kill Process
+
+kill -9 pid
